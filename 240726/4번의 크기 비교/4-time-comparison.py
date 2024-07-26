@@ -1,27 +1,13 @@
 a = int(input())
 
-b,c,d,e = map(int, input().split())
+values = list(map(int, input().split()))
 
 
-def aaa(a,b,c,d,e):
-    if a > b:
-        print(1)
-    else:
-        print(0)
+def aaa(a, values):
+    for i in values:
+        if a > i:
+            print(1)
+        else:
+            print(0)
 
-    if a > c:
-        print(1)
-    else:
-        print(0)
-
-    if a > d:
-        print(1)
-    else:
-        print(0)
-
-    if a > e:
-        print(1)
-    else:
-        print(0)
-
-aaa(a,b,c,d,e)
+aaa(a,values)
