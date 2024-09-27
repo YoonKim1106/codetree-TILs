@@ -1,5 +1,10 @@
 n = int(input())
 
-for i in range(n):
-    stars = ('*' * (n - i) + ' ') * (n - i - 1) + '*' * (n - i)
-    print(stars)
+for i in range(n,0,-1):
+    for j in range(i):
+        for k in range(i):
+            print('*',end='')
+        
+        print(" ",end='')
+
+    print()
